@@ -34,9 +34,7 @@ module.exports = class UserController{
 
     //Listar todos os usuários
     static async list(req, res){
-
         try {
-            
             const users = await User.findAll();
 
             if(users){

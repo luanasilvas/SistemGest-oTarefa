@@ -1,5 +1,4 @@
-const {DataTypes}   = require('sequelize');
-const db            = require('../db/conn');
+const db = require('../db/conn');
 
 const User = db.define('User', {
     nome: {type: DataTypes.STRING, allowNull: true},
